@@ -5,10 +5,13 @@
     </header>
     <div class="box-home">
             <a href="<?= url ?>create/produto"><button class="btnhome btnhome2"><img src="<?= url ?>public/imagens/ICONE ITENS.png"><br>CADASTRAR ITENS</button></a>
-            <a href="<?= url ?>"><button class="btnhome btnhome1"><img src="<?= url ?>public/imagens/ICONE CAIXA.png"><br>CAIXA</button></a>
+            <a href="<?= url ?>caixa"><button class="btnhome btnhome1"><img src="<?= url ?>public/imagens/ICONE CAIXA.png"><br>CAIXA</button></a>
             <a href="<?= url ?>user"><button class="btnhome btnhome3"><img src="<?= url ?>public/imagens/ICONE USUARIO.png"><br>CADASTRAR USUÁRIO</button></a>
-            <a href="<?= url ?>"><button class="btnhome btnhome4"><img src="<?= url ?>public/imagens/ICONE INVENTARIO.png"><br>INVENTÁRIO</button></a>
-            <a href="<?= url ?>"><button class="btnhome btnhome5"><img src="<?= url ?>public/imagens/ICONE RELATORIO.png"><br>RELÁTORIOS</button></a>
-            <a href="<?= url ?>"><button class="btnhome btnhome6"><img src="<?= url ?>public/imagens/ICONE SAIR.png"><br>SAIR</button></a>
+            <a href="<?= url ?>inventario"><button class="btnhome btnhome4"><img src="<?= url ?>public/imagens/ICONE INVENTARIO.png"><br>INVENTÁRIO</button></a>
+            <a href="<?= url ?>relatorio"><button class="btnhome btnhome5"><img src="<?= url ?>public/imagens/ICONE RELATORIO.png"><br>RELÁTORIOS</button></a>
+            <a href="<?= url ?>sair"><button class="btnhome btnhome6"><img src="<?= url ?>public/imagens/ICONE SAIR.png"><br>SAIR</button></a>
     </div>
+    <br>
+    <br>
+    <br>
 </div>  

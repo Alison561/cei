@@ -19,7 +19,13 @@ class produto{
     public function selectId($id){
         $var = MySql::con()->prepare("SELECT * FROM `produto` WHERE id = ?");
         $var->execute(array($id));
-        return $var->fetchAll();
+        return $var->fetch();
+    }
+
+    public function selectCode($code){
+        $var = MySql::con()->prepare("SELECT * FROM `produto` WHERE codigo = ?");
+        $var->execute(array($code));
+        return $var->fetch();
     }
 
     public function update($id, $cod, $nome, $qnt, $preco, $data){
@@ -27,8 +33,13 @@ class produto{
         $var->execute(array($cod, $nome, $qnt, $preco, $data, $id));
     }
 
+    public function quantidade($id, $qnt){
+        $var = MySql::con()->prepare("UPDATE `produto` SET qnt= ? WHERE id = ?");
+        $var->execute(array($qnt, $id));
+    }
+
     public function delete($id){
-        $var = MySql::con()->prepare("DELETE `produto` WHERE id = ?");
+        $var = MySql::con()->prepare("DELETE FROM `produto` WHERE id = ?");
         $var->execute(array($id));
     }
 }

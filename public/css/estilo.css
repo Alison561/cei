@@ -31,8 +31,8 @@ input{
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,6 +96,12 @@ input{
     font-size: 30px;
 }
 
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .btnhome:hover{
     background-color: #fff;
     color: #011670;
@@ -106,6 +112,29 @@ input{
     width: 95%;
     display: flex;
     justify-content: center;
+}
+
+.inventario{
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    margin-bottom: 15px;
+}
+.inventario h2{
+    font-weight: normal;
+    font-size: 35px;
+}
+.inventario button{
+    font-weight: normal;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+}
+.inventario p{
+    font-weight: normal;
+    font-size: 25px;
 }
 
 

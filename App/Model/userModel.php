@@ -10,7 +10,7 @@ class userModel{
     }
 
     public function login($email, $senha){
-        $var = MySql::con()->prepare("SELECT * FROM `user` where email = ? && senha = ?");
+        $var = MySql::con()->prepare("SELECT * FROM `user` where email = ? AND senha = ?");
         $var->execute(array($email, $senha));
         $row = $var->fetch();
 

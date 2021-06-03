@@ -22,9 +22,7 @@ class userController{
     }
 
     public function loginUp(){
-        if (isset($_SESSION['login'])) {
-            $this->redirect();
-        } else if ($_POST["usuario"] == '' || $_POST["senha"] == '') {
+        if ($_POST["usuario"] == '' || $_POST["senha"] == '') {
             $_POST['error'] = 'Campos vazios não são permitidos';
         }else if($this->user->login($_POST["usuario"], $_POST["senha"])){
             $this->redirect();
